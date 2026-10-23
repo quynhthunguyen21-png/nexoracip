@@ -1,7 +1,7 @@
 FROM node:24.20.0-alpine AS frontend
 WORKDIR /build
 COPY nexora-source.tar.gz /tmp/nexora-source.tar.gz
-RUN echo "ded5f7843fa7fc082bb29befc7a51d3a24271deab8c68265731a18f83ca62e1b  /tmp/nexora-source.tar.gz" | sha256sum -c - && tar -xzf /tmp/nexora-source.tar.gz -C /build
+RUN echo "98299d4974642e339f1c3948ea1689cd2f6537d8d4c29a5db85046ea0698f03b  /tmp/nexora-source.tar.gz" | sha256sum -c - && tar -xzf /tmp/nexora-source.tar.gz -C /build
 WORKDIR /build/frontend
 RUN npm ci && npm run build
 
