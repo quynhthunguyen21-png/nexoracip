@@ -4,10 +4,10 @@
   "buildCommand": null,
   "installCommand": null,
   "outputDirectory": "vercel-public",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/:path*",
-      "destination": "https://nexoracip-api.onrender.com/:path*"
+      "src": "/(.*)",
+      "dest": "https://nexoracip-api.onrender.com/$1"
     }
   ]
 }
