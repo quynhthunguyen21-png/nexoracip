@@ -1,0 +1,4 @@
+# Only runtime packages used by the password-protected demo; DB foundations remain local.
+fastapi==0.143.3
+uvicorn==0.54.0
+httpx==0.28.1
