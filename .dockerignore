@@ -1,0 +1,16 @@
+**/.env
+**/.env.*
+.git
+.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+frontend/dist
+output
+uploads
+secrets
+credentials
+data/private
+data/local
+tests
+*.log

@@ -1,0 +1,86 @@
+# Environment secrets; retain the shared example
+.env
+.env.*
+!.env.example
+
+# Node.js dependencies, caches, and generated build output
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+.next/
+.nuxt/
+.vite/
+.parcel-cache/
+.turbo/
+*.tsbuildinfo
+/frontend/dist/
+/frontend/build/
+
+# Python virtual environments, caches, and packaging output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+*.egg-info/
+/backend/build/
+/backend/dist/
+
+# Tool caches and coverage; keep test/audit evidence elsewhere
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+
+# Logs, OS files, and editor-local state
+*.log
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*.local.json
+*.swp
+*.swo
+*~
+
+# Local database files and PostgreSQL runtime data
+*.local.db
+*.local.sqlite
+*.local.sqlite3
+*.local.sqlite-journal
+*.local.sqlite-wal
+*.local.sqlite-shm
+*.local.sqlite3-journal
+*.local.sqlite3-wal
+*.local.sqlite3-shm
+/pgdata/
+/data/postgres/
+/data/local/
+/backups/local/
+
+# Private fixtures and uploaded files (not shared test fixtures)
+/tests/fixtures/private/
+/data/private/
+/uploads/
+/backend/uploads/
+
+# Local credentials and private keys
+/secrets/
+/credentials/
+credentials.local.json
+service-account.local.json
+*.private.key
+*.private.pem
+id_rsa
+id_ed25519
+.pgpass
+.npmrc.local
