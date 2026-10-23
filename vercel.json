@@ -5,6 +5,9 @@
   "installCommand": null,
   "outputDirectory": "vercel-public",
   "rewrites": [
-    {"source": "/:path*", "destination": "https://CHI_DIA_CHI_RENDER.onrender.com/:path*"}
+    {
+      "source": "/:path*",
+      "destination": "https://nexoracip-api.onrender.com/:path*"
+    }
   ]
 }
